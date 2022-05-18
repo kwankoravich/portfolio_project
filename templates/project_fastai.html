@@ -1,0 +1,96 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a>
+        Hello World
+    </a>
+</body>
+</html> -->
+
+{% extends 'base.html' %}
+{% block content %}
+<!-- https://towardsdatascience.com/deep-learning-projects-with-fastai-from-model-training-to-deployment-2be3135bd757 -->
+    <main class ="main main--project">
+        <div>
+            <img
+                class="hero"
+                src="{{ url_for('static', filename=project['hero']) }}"
+                alt = "how to build fastai in image classification"
+            />
+            <article class="project">
+                <article class="project__content">
+                    <h2 class="project__heading">{{ project['name'] }}</h2>
+                    <p>
+                        Has anyone encountered how to build the complicated deep learning model? Nowadays, there is a powerful tool to construct the machine learning model with a few codes such as pycaret, AutoGluon, etc. Some data scientists said that these tools might have low flexibility to adjust the function and algorithm. So, the author would like to proudly present one of the most efficient tools for producing the model is fastai library which is based on PyTorch Framework.
+                    </p>
+                    <p>
+                        In this article, the author will tour you to explore how to conduct the image classification model to diagnose COVID-19 Symptoms using X-rays. 
+                    </p>
+                    <p>
+                        This article extracts COVID-19 Radiography database from TAWSIFUR RAHMAN AND 2 COLLABORATORS, the winner of the COVID-19 Dataset Award by Kaggle Community.
+                    </p>
+                    <h2 class="project__heading">Importing Essential Libraries</h2>
+                    <p>
+                        At first, you should download the required libraries from fastai to your local machine and let's install fastai on your computer
+                    </p>
+                        <img
+                        class = "hero"
+                        src = "/static/img/install.png"
+                        alt = "pip install "
+                        />
+                    <p>
+                        And then import the Essential libraries as you need to the notebook.
+                    </p>
+                        <img
+                        class = "hero"
+                        src = "/static/img/import.png"
+                        alt = "import library"
+                        />
+                    <h2 class="project__heading">Dataloader</h2>
+                    <p>
+                        Now, creating the dataloader object along with the image dataset, fastai provides a flexibly convenient function to construct the dataloader called ImageDataLoaders API.                    </p>
+                        <img
+                        class = "hero"
+                        src = "/static/img/dataloader.png"
+                        alt = "Dataloader"
+                        />
+                    <p>
+                        We can check the image in dataloader using show_batch
+                    </p>
+                        <img
+                        class = "hero"
+                        src = "/static/img/image_dataloader.png"
+                        alt = "Dataloader"
+                        />
+                    <h2 class="project__heading">Model Training</h2>
+                    <p>
+                        ResNet architecture is widely used for image classification, it is accurate and fast for various datasets. So I decided to use ResNet50 which is a common model.
+                        fastai provides the API for building the model in CNN architecture called Leaner.
+                    </p>
+                        <img
+                        class = "hero"
+                        src = "/static/img/learner.png"
+                        alt = "Dataloader"
+                        />
+                    <p>
+                        Learning rate is one of the hyperparameters to calculate loss function. Sometimes, data scientist or ML Engineer spend their time optimising the learning rate to find the best accuracy or loss with a huge time. fastai provides the best algorithm to find the initial learning rate for CNN model in Sylvain Gugger's article. Thus, we don't need to experiment anymore. To activate this algorithm, we called .lr_find API to see the graph below
+                    </p>
+                        <img
+                            class = "hero"
+                            src = "/static/img/learning rate.png"
+                            alt = "Dataloader"
+                        />
+                </article>
+            </article>
+        </div>
+    </main>
+
+
+
+{% endblock %}

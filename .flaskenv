@@ -1,0 +1,2 @@
+FLASK_APP=portfolio_project
+FLASK_ENV=development
