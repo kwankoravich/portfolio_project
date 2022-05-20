@@ -9,7 +9,7 @@ projects = [
         "name": "Covid-19 Chest X-rays Classification using fastai",
         "thumb": "img/scenary.jpg",
         "hero": "img/lake.jpg",
-        "categories": ["python"],
+        "categories": ["python, pytorch, fastai"],
         "slug": "fastai"
     },
     {

@@ -89,6 +89,88 @@
                     <p>
                         To train the model, we need to create fine_tine(epochs, lr)in which is the analogous system of ML models.
                     </p>
+                    <dl>
+                        <dt>Here, the argument would be expressed as below:</dt>
+                        <li>epochs: the number of epochs for training the model</li>
+                        <li>lr: the initial learning rate of this model</li>
+                    </dl>
+                    <p>
+                        In this case, 5 epochs are fairly enough to achieve higher accuracy, almost 98%
+                    </p>
+                    <img
+                        class = "hero"
+                        src = "/static/img/training_loop.JPG"
+                        alt = "Training Loop"
+                    />
+                    <p>
+                        We can use show_results()to visualise the prediction in each image of one batch.
+                    </p>
+                    <img
+                        class = "hero"
+                        src = "/static/img/show_results.png"
+                        alt = "Show result in each batch"
+                    />
+                    <p>
+                        We can see the prediction as below
+                    </p>
+                    <img
+                        class = "hero"
+                        src = "/static/img/prediction.png"
+                        alt = "Prediction"
+                    />
+                    <h2 class="project__heading">Interpretation Result</h2>
+                    <p>
+                        However, the accuracy of the model couldn’t reflect every aspect of the model and the model might overfit some classes in the dataset if the dataset is imbalanced.
+                    </p>
+                    <p>
+                        We can also use a confusion matrix to visualise and compare the actual and predicted in each class by using plot_confusion_matrix()
+                    </p>
+                    <img
+                        class = "hero"
+                        src = "/static/img/evaluation_metric.png"
+                        alt = "ClassificationInterpretation"
+                    />
+                    <!-- <p>
+                        
+                    </p> -->
+                    <img
+                        class = "hero"
+                        src = "/static/img/confusion matrix.png"
+                        alt = "Confusion Matrix"
+                    />
+                    <h2 class="project__heading">Class Activation Map (CAM)</h2>
+                    <p>
+                        Some medical experts are sometimes curious about how can we explain deep learning model architecture and why the model decided to predict in that class. We can utilise the Class Activation Map (CAM) to calculate the gradient last layer or the layers that we are interested in and plot it in the heatmap.
+                    </p>
+                    <blockquote>
+                        Class activation maps are a simple technique to get the discriminative image regions used by a CNN to identify a specific class in the image. In other words, a class activation map (CAM) lets us see which regions in the image were relevant to this class
+                    </blockquote>
+                    <p>
+                        In fastai, we can use fastai.callback.hookto call the last layer of CNN model to calculate the gradient
+                    </p>
+                    <img
+                        class = "hero"
+                        src = "/static/img/cam.png"
+                        alt = "Class Activation Map (CAM)"
+                    />
+                    <p>
+                        To sum up, we can see the heatmap to show what region in images the model decides to predict in that class.
+                    </p>
+                    <img
+                        class = "hero"
+                        src = "/static/img/heatmap_cam.png"
+                        alt = "Example of Class Activation Map"
+                    />
+                    <h2 class="project__heading">Conclusion</h2>
+                    <p>
+                        Finally, it is undeniable that fastai is a useful tool for building deep learning models such in NLP, Computer Vision and Time-series classification fields.
+                    </p>
+                    <p>
+                        Compared to the classical approach, fastai is to spend lesser time and lower the number of code lines.
+                    </p>
+                    <p>
+                        fastai also provides various and essential APIs to create DataLoader, Learner (Model), Confusion Matrix, etc.
+                    </p>
                 </article>
             </article>
             <section>
