@@ -4,6 +4,7 @@
 <main class = "main main--home">
     <section class = "projects">
         {% for project in projects %}
+        <div class = "grid">
         <!-- <a class  = "u-bare-link" href="#"> -->
         <a class  = "u-bare-link" href="{{ url_for('personal_profile.project', slug=project['slug']) }}">
             <article class ="project-card">
@@ -23,6 +24,8 @@
                 </header>
             </article>
         </a>
+    </div>
+        </section>
         {% endfor %}
     </section>
     {% endblock %}

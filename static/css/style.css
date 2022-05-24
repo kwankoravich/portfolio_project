@@ -10,6 +10,31 @@ html {
 
 body {
     margin-top: 80px;
+    padding: 0;
+    /* background-color: darkslategrey; */
+    background: url(/static/img/Koravich.jpg) repeat;
+    /* background-size: cover; */
+}
+
+.grid {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    padding: 8px;
+    column-gap: 50px;
+    row-gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110vw;
+    height: 140vh;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    pointer-events: none;
 }
 
 .header{
@@ -23,7 +48,8 @@ body {
 
 .nav__link {
     text-decoration: none;
-    color: #1c2023;
+    /* color: #1c2023; */
+    color: whitesmoke;
 }
 
 
@@ -63,7 +89,8 @@ body {
 }
 
 .contact__link {
-    color: black;
+    /* color: black; */
+    color: whitesmoke;
     text-decoration: none;
     box-shadow: 0 3px 0 0 #4cafda;
 }
@@ -71,10 +98,11 @@ body {
 .projects {
     display: grid;
     grid-template-columns: 1fr;
+    /* grid-template-columns: repeat(3, 2fr); */
     column-gap: 1.25rem;
     justify-content: center;
     justify-items: center;
-    max-width: 21.875rem;
+    /* max-width: 21.875rem; */
     margin: 0 auto;
 }
 
@@ -110,7 +138,8 @@ body {
     margin: 0;
     font-size: 1.5rem;
     line-height: 2.25rem;
-    color: #1c2023
+    /* color: #1c2023 */
+    color: whitesmoke
 }
 
 .project-card:hover .project-card__image {
@@ -195,7 +224,8 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: #1c2023;
+    /* color: #1c2023; */
+    color: whitesmoke;
     text-decoration: none;
 }
 

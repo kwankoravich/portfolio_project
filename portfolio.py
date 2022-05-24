@@ -9,23 +9,23 @@ projects = [
         "name": "Covid-19 Chest X-rays Classification using fastai",
         "thumb": "img/scenary.jpg",
         "hero": "img/lake.jpg",
-        "categories": ["python, pytorch, fastai"],
+        "categories": ["python, pytorch, fastai , Computer Vision"],
         "slug": "fastai"
     },
     {
-        "name": "Project2",
+        "name": "NLP Tagging using CRF model",
         "thumb": "img/scenary.jpg",
         "hero": "img/lake.jpg",
-        "categories": ["python"],
-        "slug": "A"
+        "categories": ["python, NLTK, NLP, scikit-learn"],
+        "slug": "NLP Tagging"
     },
-    {
-        "name": "Project3",
-        "thumb": "img/scenary.jpg",
-        "hero": "img/lake.jpg",
-        "categories": ["python"],
-        "slug": "A"
-    },
+    # {
+    #     "name": "Project3",
+    #     "thumb": "img/scenary.jpg",
+    #     "hero": "img/lake.jpg",
+    #     "categories": ["python"],
+    #     "slug": "A"
+    # },
 ]
 
 slug_to_project = {project['slug']: project for project in projects}
