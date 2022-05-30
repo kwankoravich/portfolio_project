@@ -14,7 +14,7 @@ projects = [
     },
     {
         "name": "NLP Tagging using CRF model",
-        "thumb": "img/scenary.jpg",
+        "thumb": "img/night_city.jpg",
         "hero": "img/lake.jpg",
         "categories": ["python, NLTK, NLP, scikit-learn"],
         "slug": "NLP Tagging"
